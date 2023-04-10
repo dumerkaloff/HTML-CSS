@@ -1,0 +1,37 @@
+.body{
+    background-color: #603601;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    ". . ."
+    "item5 . item6"
+    ". . ."
+    ;
+    gap: 10px;
+    justify-items: center;
+    margin: 50px;
+}
+
+.item5{
+    grid-area: item5;
+}
+
+.item6{
+    grid-area: item6;
+}
+
+.description{
+    background-color: #CC9544;
+    padding: 70px 50px;
+    border-radius: 35%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.img-body{
+    height: 300px;
+    width: 300px;
+}

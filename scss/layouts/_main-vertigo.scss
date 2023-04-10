@@ -1,0 +1,57 @@
+.base1{
+    background-color: #CC9544;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.body1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    ". item1 . item2 ."
+    ". item3 . item4 ."
+    ;
+    gap: 10px;
+    justify-items: center;
+    margin: 50px;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.img1{
+    height: 320px;
+    width: 560px;
+}
+
+.p4{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.p5{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    height: 80px;
+    width: 300px;
+    border-radius: 35%;
+    border: 2px solid black;
+}

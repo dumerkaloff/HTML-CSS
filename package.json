@@ -1,12 +1,26 @@
 {
   "name": "proyecto-final",
   "version": "1.0.0",
-  "description": "",
+  "description": "Comision 39315 Indurain Leonel Damian",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./scss/style.scss ./css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonelindurain/HTML-CSS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leonelindurain/HTML-CSS/issues"
+  },
+  "homepage": "https://github.com/leonelindurain/HTML-CSS#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  }
 }
