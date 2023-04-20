@@ -1,37 +1,45 @@
-.body{
+main{
     background-color: #603601;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
     grid-template-areas:
-    ". . ."
-    "item5 . item6"
-    ". . ."
+    "item-index1"
+    "item-index2"
     ;
-    gap: 10px;
+    gap: 3px;
+    margin: 15px;
     justify-items: center;
-    margin: 50px;
+    div {
+        .text-index {
+            background-color: #CC9544;
+            padding: 20px 30px;
+            border-radius: 35%;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+        }
+        .text-index:hover{
+            transform: scale(1.2);
+        }
+    }
+    div {
+        .img-index{
+            height: 150px;
+            width: 150px;
+        }
+        .img-index:hover{
+            transform: rotateY(180deg);
+        }
+    }
 }
 
-.item5{
-    grid-area: item5;
+.item-index1{
+    grid-area: item-index1;
 }
 
-.item6{
-    grid-area: item6;
-}
-
-.description{
-    background-color: #CC9544;
-    padding: 70px 50px;
-    border-radius: 35%;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-}
-
-.img-body{
-    height: 300px;
-    width: 300px;
+.item-index2{
+    grid-area: item-index2;
 }

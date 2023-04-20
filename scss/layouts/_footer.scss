@@ -1,12 +1,27 @@
-.container-footer {
+footer {
     background-color: #1C0A00;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px 0 50px;
+    padding: 10px 20px;
     margin-top: auto;
+    gap: 3px;
+    div {
+        .redes-logo-footer{
+            height: 24px;
+            width: 24px;
+        }
+    }
+    div {
+        p{  
+            text-align: center;
+            color: white;
+            font-size: 10px;
+        }
+    }
 }
 
 .derechos{

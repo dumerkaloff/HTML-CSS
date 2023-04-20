@@ -1,3 +1,35 @@
-body {
-    @include base;
+.base{
+    background-color: #603601;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.base1{
+    background-color: #CC9544;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.base2{
+    background-image: url(../assets/img/TAPA_DARSHA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.base3{
+    background-image: url(../assets/img/guardanieves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
 }

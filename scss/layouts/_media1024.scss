@@ -1,34 +1,3 @@
-@media (max-width:1024px) {
+@media (min-width:1024px) {
 
-    .logo{
-        height: 180px;
-        width: 260px;
-    }
-    
-    .button-pages{
-        height: 40px;
-        width: 120px;
-        border-radius: 10%;
-        border: 2px solid black;
-        margin: 12px;
-    }
-    
-    .description{
-        font-size: 20px;
-    }
-    
-    .img-body{
-        height: 250px;
-        width: 250px;
-    }
-    
-    .redes-logos{
-        height: 32px;
-        width: 32px;
-    }
-    
-    .derechos{
-        font-size: 15px;
-    }
-    
-    }
+}

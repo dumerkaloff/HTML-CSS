@@ -3,65 +3,106 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
+.base {
   background-color: #603601;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   text-align: center; }
 
-.container-header {
+.base1 {
+  background-color: #CC9544;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center; }
+
+.base2 {
+  background-image: url(../assets/img/TAPA_DARSHA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center; }
+
+.base3 {
+  background-image: url(../assets/img/guardanieves.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center; }
+
+header {
   background-color: #1C0A00;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px 0 50px; }
+  padding: 0 20px 0 20px; }
+  header div .logo {
+    height: 60px;
+    width: 120px;
+    animation-name: logo;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-duration: 1s;
+    animation-delay: 1s; }
+  header div ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    padding-left: 0; }
+    header div ul li a .button-navbar {
+      height: 20px;
+      width: 60px;
+      border-radius: 10%;
+      border: 1px solid black;
+      margin: 5px; }
+    header div ul li a .button-navbar:hover {
+      transform: scale(1.4); }
 
-.navbar {
-  display: flex;
-  list-style: none; }
+@keyframes logo {
+  0% {
+    rotate: 0deg; }
+  100% {
+    rotate: 360deg; } }
 
-.logo {
-  height: 200px;
-  width: 300px; }
-
-.button-pages {
-  height: 50px;
-  width: 150px;
-  border-radius: 10%;
-  border: 2px solid black;
-  margin: 15px; }
-
-.body {
+main {
   background-color: #603601;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: ". . .""item5 . item6"". . .";
-  gap: 10px;
-  justify-items: center;
-  margin: 50px; }
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "item-index1" "item-index2";
+  gap: 3px;
+  margin: 15px;
+  justify-items: center; }
+  main div .text-index {
+    background-color: #CC9544;
+    padding: 20px 30px;
+    border-radius: 35%;
+    text-align: center;
+    color: white;
+    font-size: 15px; }
+  main div .text-index:hover {
+    transform: scale(1.2); }
+  main div .img-index {
+    height: 150px;
+    width: 150px; }
+  main div .img-index:hover {
+    transform: rotateY(180deg); }
 
-.item5 {
-  grid-area: item5; }
+.item-index1 {
+  grid-area: item-index1; }
 
-.item6 {
-  grid-area: item6; }
-
-.description {
-  background-color: #CC9544;
-  padding: 70px 50px;
-  border-radius: 35%;
-  text-align: center;
-  color: white;
-  font-size: 25px; }
-
-.img-body {
-  height: 300px;
-  width: 300px; }
+.item-index2 {
+  grid-area: item-index2; }
 
 .body2 {
   display: flex;
@@ -147,8 +188,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: ". item1 . item2 ."
- ". item3 . item4 .";
+  grid-template-areas: ". item1 . item2 ." ". item3 . item4 .";
   gap: 10px;
   justify-items: center;
   margin: 50px; }
@@ -183,116 +223,25 @@ body {
   border-radius: 35%;
   border: 2px solid black; }
 
-.container-footer {
+footer {
   background-color: #1C0A00;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px 0 50px;
-  margin-top: auto; }
+  padding: 10px 20px;
+  margin-top: auto;
+  gap: 3px; }
+  footer div .redes-logo-footer {
+    height: 24px;
+    width: 24px; }
+  footer div p {
+    text-align: center;
+    color: white;
+    font-size: 10px; }
 
 .derechos {
   text-align: center;
   color: white; }
-
-@media (max-width: 1024px) {
-  .logo {
-    height: 180px;
-    width: 260px; }
-  .button-pages {
-    height: 40px;
-    width: 120px;
-    border-radius: 10%;
-    border: 2px solid black;
-    margin: 12px; }
-  .description {
-    font-size: 20px; }
-  .img-body {
-    height: 250px;
-    width: 250px; }
-  .redes-logos {
-    height: 32px;
-    width: 32px; }
-  .derechos {
-    font-size: 15px; } }
-
-@media (max-width: 768px) {
-  .body {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "item5 ."
- ". item6";
-    gap: 5px;
-    margin: 25px; }
-  .contact-me {
-    margin-left: 10px; } }
-
-@media (max-width: 320px) {
-  .logo {
-    height: 60px;
-    width: 120px; }
-  .button-pages {
-    height: 20px;
-    width: 60px;
-    border-radius: 10%;
-    border: 1px solid black;
-    margin: 5px; }
-  .navbar {
-    display: flex;
-    list-style: none;
-    flex-direction: row; }
-  .container-header {
-    flex-direction: column;
-    padding: 0 20px 0 20px; }
-  .description {
-    font-size: 15px;
-    padding: 20px 30px; }
-  .img-body {
-    height: 150px;
-    width: 150px; }
-  .body {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "item5"
- "item6";
-    gap: 3px;
-    margin: 15px; }
-  .redes-logos {
-    height: 24px;
-    width: 24px; }
-  .container-footer {
-    flex-direction: column;
-    padding: 10px 20px;
-    gap: 3px; }
-  .derechos {
-    font-size: 10px; }
-  .body2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 50px 20px; }
-  .h1 {
-    font-size: 20px;
-    padding: 10px; }
-  .button-submit {
-    height: 20px;
-    width: 100px;
-    font-size: 10px; }
-  .p3 {
-    font-size: 10px; }
-  .button-linktree {
-    height: 30px;
-    width: 90px;
-    border-radius: 35%;
-    border: 2px solid black; }
-  .contact-me {
-    height: 400px;
-    width: 280px;
-    margin-top: 50px; }
-  .size-320 {
-    font-size: 10px; }
-  .form-control {
-    font-size: 10px; } }
