@@ -1,3 +1,135 @@
 @media (min-width:480px) {
+    header {
+        div {
+            .logo {
+                height: 70px;
+                width: 140px;
+            }
+        }
+        div {
+            ul {
+                li {
+                    a {
+                        .button-navbar {
+                            height: 30px;
+                            width: 90px;
+                            margin: 8px
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+/////////////////////////////INDEX////////////////////////////
+
+    main {
+        div {
+            .text-index {
+                padding: 25px 40px;
+                font-size: 18px;
+            }
+        }
+        div {
+            .img-index {
+                height: 180px;
+                width: 180px;
+            }
+        }
+    }
+
+/////////////////////////////CONTACTO////////////////////////////
     
+    main {
+        section {
+            div {
+                p {
+                    font-size: 14px;
+                    border: 2px solid black;
+                    padding: 8px;
+                }
+            }
+            div {
+                a {
+                    img {
+                        height: 40px;
+                        width: 120px;
+                        border: 2px solid black
+                    }
+                }
+            }
+        }
+        section {
+            h1 {
+                font-size: 30px;
+                border: 2px solid black;
+            }
+            button {
+                height: 30px;
+                width: 200px;
+                font-size: 14px;
+            }
+        }
+    }
+
+/////////////////////////////VERTIGO////////////////////////////
+
+    main {
+        div {
+            img {
+                height: 225px;
+                width: 450px;
+            }
+        }
+        div {
+            .text-hector{
+                font-size: 15px;
+                height: 100px;
+                width: 250px;
+            }
+        }
+        div {
+            p {
+                font-size: 30px;
+            }
+        }
+        div {
+            iframe {
+                width: 450;
+                height: 225;
+            }
+        }
+    }
+
+    .item1 {
+        grid-area: item1;
+    }
+
+    .item2 {
+        grid-area: item2;
+    }
+
+    .item3 {
+        grid-area: item3;
+    }
+
+    .item4 {
+        grid-area: item4;
+    }
+
+    footer {
+        div {
+            .redes-logo-footer {
+                height: 32px;
+                width: 32px;
+            }
+        }
+        div {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
 }
+

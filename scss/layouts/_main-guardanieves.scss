@@ -1,9 +1,6 @@
-.base3{
-    background-image: url(../assets/img/guardanieves.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    text-align: center;
+main {
+    background-image: url(/assets/img/guardanieves.png);
+}
+.carousel-size{
+    margin: 50px 0;
 }

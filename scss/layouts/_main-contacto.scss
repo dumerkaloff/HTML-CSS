@@ -1,57 +1,60 @@
-.body2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin: 50px 20px;
-}
-
-.h1{
-    font-size: 40px;
-    color: white;
-    background-color: #1C0A00;
-    text-align: center;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 20%;
-    border: 2px solid black
-}
-
-.button-submit{
-        color:white;
-        height: 45px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        text-transform: uppercase;
-        background-color: #1C0A00;
-        border-color: #1C0A00;
-        border-style: solid;
-        border-radius: 10px;
-        width: 420px;
-        cursor: pointer;
-}
-
-.p3{
-    font-size: 15px;
-    color: white;
-    border: 2px solid black;
-    border-radius: 20%;
-    padding: 10px;
-    text-align: justify;
-}
-
-.button-linktree{
-    height: 50px;
-    width: 150px;
-    border-radius: 35%;
-    border: 2px solid black
-}
-
-.contact-me{
-    background-color:#CC9544;
-    padding: 40px;
-    border-radius: 20%;
-    border: 2px solid black;
+main {
+    section {
+        div {
+            p {
+                font-size: 12px;
+                color: white;
+                border: 1px solid black;
+                border-radius: 20%;
+                padding: 5px;
+            }
+        }
+        div {
+            a {
+                img {
+                    height: 30px;
+                    width: 90px;
+                    border-radius: 35%;
+                    border: 1px solid black
+                }
+            }
+        }
+    }
+    section {
+        background-color:#CC9544;
+        padding: 10px;
+        border-radius: 20%;
+        border: 2px solid black;
+        h1 {
+            font-size: 25px;
+            color: white;
+            background-color: #1C0A00;
+            padding: 5px;
+            border-radius: 20%;
+            border: 1px solid black;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            color:white;
+            height: 20px;
+            padding-left: 2px;
+            padding-right: 2px;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            text-transform: uppercase;
+            background-color: #1C0A00;
+            border-color: #1C0A00;
+            border-style: solid;
+            border-radius: 10px;
+            width: 180px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+    }
+    .section1{
+        background-color: #603601;
+        border: none;
+    }
 }

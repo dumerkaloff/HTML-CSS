@@ -24,7 +24,8 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  justify-content: center; }
 
 .base3 {
   background-image: url(../assets/img/guardanieves.png);
@@ -104,94 +105,93 @@ main {
 .item-index2 {
   grid-area: item-index2; }
 
-.body2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin: 50px 20px; }
-
-.h1 {
-  font-size: 40px;
+main section div p {
+  font-size: 12px;
   color: white;
-  background-color: #1C0A00;
-  text-align: center;
-  width: fit-content;
-  padding: 10px;
+  border: 1px solid black;
   border-radius: 20%;
-  border: 2px solid black; }
+  padding: 5px; }
 
-.button-submit {
-  color: white;
-  height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  background-color: #1C0A00;
-  border-color: #1C0A00;
-  border-style: solid;
-  border-radius: 10px;
-  width: 420px;
-  cursor: pointer; }
-
-.p3 {
-  font-size: 15px;
-  color: white;
-  border: 2px solid black;
-  border-radius: 20%;
-  padding: 10px;
-  text-align: justify; }
-
-.button-linktree {
-  height: 50px;
-  width: 150px;
+main section div a img {
+  height: 30px;
+  width: 90px;
   border-radius: 35%;
-  border: 2px solid black; }
+  border: 1px solid black; }
 
-.contact-me {
+main section {
   background-color: #CC9544;
-  padding: 40px;
+  padding: 10px;
   border-radius: 20%;
   border: 2px solid black; }
+  main section h1 {
+    font-size: 25px;
+    color: white;
+    background-color: #1C0A00;
+    padding: 5px;
+    border-radius: 20%;
+    border: 1px solid black;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto; }
+  main section button {
+    color: white;
+    height: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    background-color: #1C0A00;
+    border-color: #1C0A00;
+    border-style: solid;
+    border-radius: 10px;
+    width: 180px;
+    font-size: 13px;
+    cursor: pointer; }
 
-.base2 {
-  background-image: url(../assets/img/TAPA_DARSHA.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  text-align: center; }
+main .section1 {
+  background-color: #603601;
+  border: none; }
+
+main {
+  background-image: url(../assets/img/TAPA_DARSHA.jpg); }
 
 .carousel-size {
   margin: 50px 0; }
 
-.base3 {
-  background-image: url(../assets/img/guardanieves.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  text-align: center; }
+main {
+  background-image: url(/assets/img/guardanieves.png); }
 
-.base1 {
+.carousel-size {
+  margin: 50px 0; }
+
+main {
   background-color: #CC9544;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  text-align: center; }
-
-.body1 {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: ". item1 . item2 ." ". item3 . item4 .";
-  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "item1" "item2" "item3" "item4";
   justify-items: center;
-  margin: 50px; }
+  margin: 10px; }
+  main div img {
+    height: 150px;
+    width: 300px; }
+  main div .text-hector {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    height: 80px;
+    width: 150px;
+    border-radius: 35%;
+    border: 2px solid black;
+    justify-content: center;
+    padding-top: 12px; }
+  main div p {
+    font-size: 25px;
+    color: white; }
+  main div iframe {
+    width: 300px;
+    height: 150px; }
 
 .item1 {
   grid-area: item1; }
@@ -204,24 +204,6 @@ main {
 
 .item4 {
   grid-area: item4; }
-
-.img1 {
-  height: 320px;
-  width: 560px; }
-
-.p4 {
-  font-size: 25px;
-  color: white;
-  text-align: center; }
-
-.p5 {
-  font-size: 15px;
-  color: white;
-  text-align: center;
-  height: 80px;
-  width: 300px;
-  border-radius: 35%;
-  border: 2px solid black; }
 
 footer {
   background-color: #1C0A00;
@@ -245,3 +227,58 @@ footer {
 .derechos {
   text-align: center;
   color: white; }
+
+@media (min-width: 480px) {
+  header div .logo {
+    height: 70px;
+    width: 140px; }
+  header div ul li a .button-navbar {
+    height: 30px;
+    width: 90px;
+    margin: 8px; }
+  main div .text-index {
+    padding: 25px 40px;
+    font-size: 18px; }
+  main div .img-index {
+    height: 180px;
+    width: 180px; }
+  main section div p {
+    font-size: 14px;
+    border: 2px solid black;
+    padding: 8px; }
+  main section div a img {
+    height: 40px;
+    width: 120px;
+    border: 2px solid black; }
+  main section h1 {
+    font-size: 30px;
+    border: 2px solid black; }
+  main section button {
+    height: 30px;
+    width: 200px;
+    font-size: 14px; }
+  main div img {
+    height: 225px;
+    width: 450px; }
+  main div .text-hector {
+    font-size: 15px;
+    height: 100px;
+    width: 250px; }
+  main div p {
+    font-size: 30px; }
+  main div iframe {
+    width: 450;
+    height: 225; }
+  .item1 {
+    grid-area: item1; }
+  .item2 {
+    grid-area: item2; }
+  .item3 {
+    grid-area: item3; }
+  .item4 {
+    grid-area: item4; }
+  footer div .redes-logo-footer {
+    height: 32px;
+    width: 32px; }
+  footer div p {
+    font-size: 12px; } }

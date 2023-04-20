@@ -1,22 +1,47 @@
-.base1{
+main {
     background-color: #CC9544;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    text-align: center;
-}
-
-.body1{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
     grid-template-areas:
-    ". item1 . item2 ."
-    ". item3 . item4 ."
+    "item1"
+    "item2"
+    "item3"
+    "item4"
     ;
-    gap: 10px;
     justify-items: center;
-    margin: 50px;
+    margin: 10px;
+    div {
+        img {
+            height: 150px;
+            width: 300px;
+        }
+    }
+    div {
+        .text-hector {
+            font-size: 10px;
+            color: white;
+            text-align: center;
+            height: 80px;
+            width: 150px;
+            border-radius: 35%;
+            border: 2px solid black;
+            justify-content: center;
+            padding-top: 12px;
+        }
+    }
+    div {
+        p {
+            font-size: 25px;
+            color: white;
+        }
+    }
+    div {
+        iframe {
+            width: 300px;
+            height: 150px;
+        }
+    }
 }
 
 .item1 {
@@ -33,25 +58,4 @@
 
 .item4 {
     grid-area: item4;
-}
-
-.img1{
-    height: 320px;
-    width: 560px;
-}
-
-.p4{
-    font-size: 25px;
-    color: white;
-    text-align: center;
-}
-
-.p5{
-    font-size: 15px;
-    color: white;
-    text-align: center;
-    height: 80px;
-    width: 300px;
-    border-radius: 35%;
-    border: 2px solid black;
 }
