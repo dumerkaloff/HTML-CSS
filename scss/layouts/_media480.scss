@@ -94,9 +94,9 @@
             }
         }
         div {
-            iframe {
-                width: 450;
-                height: 225;
+            .video-vertigo{
+                width: 400;
+                height: 200;
             }
         }
     }
@@ -116,6 +116,8 @@
     .item4 {
         grid-area: item4;
     }
+
+/////////////////////////////FOOTER////////////////////////////    
 
     footer {
         div {

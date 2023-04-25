@@ -3,39 +3,6 @@
   padding: 0;
   box-sizing: border-box; }
 
-.base {
-  background-color: #603601;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  text-align: center; }
-
-.base1 {
-  background-color: #CC9544;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  text-align: center; }
-
-.base2 {
-  background-image: url(../assets/img/TAPA_DARSHA.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center; }
-
-.base3 {
-  background-image: url(../assets/img/guardanieves.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  text-align: center; }
-
 header {
   background-color: #1C0A00;
   background-repeat: no-repeat;
@@ -74,7 +41,6 @@ header {
     rotate: 360deg; } }
 
 main {
-  background-color: #603601;
   justify-content: center;
   align-items: center;
   display: grid;
@@ -105,11 +71,18 @@ main {
 .item-index2 {
   grid-area: item-index2; }
 
+.base1 {
+  background-color: #CC9544;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center; }
+
 main section div p {
   font-size: 12px;
   color: white;
   border: 1px solid black;
-  border-radius: 20%;
+  border-radius: 100%;
   padding: 5px; }
 
 main section div a img {
@@ -121,16 +94,15 @@ main section div a img {
 main section {
   background-color: #CC9544;
   padding: 10px;
-  border-radius: 20%;
-  border: 2px solid black; }
+  border: 2px solid black;
+  width: 300px; }
   main section h1 {
     font-size: 25px;
     color: white;
     background-color: #1C0A00;
     padding: 5px;
-    border-radius: 20%;
     border: 1px solid black;
-    width: 200px;
+    width: 210px;
     margin-left: auto;
     margin-right: auto; }
   main section button {
@@ -153,45 +125,54 @@ main .section1 {
   background-color: #603601;
   border: none; }
 
-main {
-  background-image: url(../assets/img/TAPA_DARSHA.jpg); }
+.base {
+  background-color: #603601;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center; }
 
-.carousel-size {
-  margin: 50px 0; }
+.base2 {
+  background-image: url(../assets/img/TAPA_DARSHA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center; }
 
-main {
-  background-image: url(/assets/img/guardanieves.png); }
+.base3 {
+  background-image: url(../assets/img/guardanieves.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center; }
 
-.carousel-size {
-  margin: 50px 0; }
+main div img {
+  height: 150px;
+  width: 300px; }
 
-main {
-  background-color: #CC9544;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "item1" "item2" "item3" "item4";
-  justify-items: center;
-  margin: 10px; }
-  main div img {
-    height: 150px;
-    width: 300px; }
-  main div .text-hector {
-    font-size: 10px;
-    color: white;
-    text-align: center;
-    height: 80px;
-    width: 150px;
-    border-radius: 35%;
-    border: 2px solid black;
-    justify-content: center;
-    padding-top: 12px; }
-  main div p {
-    font-size: 25px;
-    color: white; }
-  main div iframe {
-    width: 300px;
-    height: 150px; }
+main div .text-hector {
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  height: 80px;
+  width: 150px;
+  border-radius: 35%;
+  border: 2px solid black;
+  justify-content: center;
+  padding-top: 12px; }
+
+main div p {
+  font-size: 25px;
+  color: white; }
+
+main div .video-vertigo {
+  width: 300;
+  height: 150; }
 
 .item1 {
   grid-area: item1; }
@@ -204,6 +185,21 @@ main {
 
 .item4 {
   grid-area: item4; }
+
+.base1 {
+  background-color: #CC9544;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center; }
+
+.main-vertigo {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "item1" "item2" "item3" "item4";
+  justify-items: center;
+  margin: 10px; }
 
 footer {
   background-color: #1C0A00;
@@ -266,9 +262,9 @@ footer {
     width: 250px; }
   main div p {
     font-size: 30px; }
-  main div iframe {
-    width: 450;
-    height: 225; }
+  main div .video-vertigo {
+    width: 400;
+    height: 200; }
   .item1 {
     grid-area: item1; }
   .item2 {
@@ -282,3 +278,114 @@ footer {
     width: 32px; }
   footer div p {
     font-size: 12px; } }
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    padding: 50px; }
+    header div .logo {
+      height: 90px;
+      width: 180px; }
+    header div ul li a .button-navbar {
+      height: 35px;
+      width: 105px;
+      margin: 10px; }
+  main div .text-index {
+    padding: 25px 40px;
+    font-size: 22px; }
+  main div .img-index {
+    height: 220px;
+    width: 220px; }
+  main section div p {
+    font-size: 14px;
+    border: 2px solid black;
+    padding: 8px; }
+  main section div a img {
+    height: 40px;
+    width: 120px;
+    border: 2px solid black; }
+  main section h1 {
+    font-size: 30px;
+    border: 2px solid black; }
+  main section button {
+    height: 30px;
+    width: 200px;
+    font-size: 14px; }
+  main div img {
+    height: 300px;
+    width: 600px; }
+  main div .text-hector {
+    font-size: 20px;
+    height: 125px;
+    width: 300px; }
+  main div p {
+    font-size: 30px; }
+  main div .video-vertigo {
+    width: 600;
+    height: 300; }
+  .item1 {
+    grid-area: item1; }
+  .item2 {
+    grid-area: item2; }
+  .item3 {
+    grid-area: item3; }
+  .item4 {
+    grid-area: item4; }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "item-footer1 item-footer2 item-footer3"; }
+    footer div .redes-logo-footer {
+      height: 32px;
+      width: 32px; }
+    footer div p {
+      font-size: 12px; } }
+
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    padding: 50px; }
+    header div .logo {
+      height: 110px;
+      width: 220px; }
+    header div ul li a .button-navbar {
+      height: 40px;
+      width: 120px;
+      margin: 15px; }
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: " item-index1 . " " . item-index2 "; }
+    main div .text-index {
+      padding: 25px 40px;
+      font-size: 22px; }
+    main div .img-index {
+      height: 220px;
+      width: 220px; }
+  main section div p {
+    font-size: 14px;
+    border: 2px solid black;
+    padding: 8px; }
+  main section div a img {
+    height: 40px;
+    width: 120px;
+    border: 2px solid black; }
+  main section h1 {
+    font-size: 30px;
+    border: 2px solid black; }
+  main section button {
+    height: 30px;
+    width: 200px;
+    font-size: 14px; }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "item-footer1 item-footer2 item-footer3";
+    padding: 30px; }
+    footer div .redes-logo-footer {
+      height: 36px;
+      width: 36px; }
+    footer div p {
+      font-size: 15px; } }

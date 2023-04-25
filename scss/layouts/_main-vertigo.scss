@@ -1,16 +1,4 @@
 main {
-    background-color: #CC9544;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas:
-    "item1"
-    "item2"
-    "item3"
-    "item4"
-    ;
-    justify-items: center;
-    margin: 10px;
     div {
         img {
             height: 150px;
@@ -37,9 +25,9 @@ main {
         }
     }
     div {
-        iframe {
-            width: 300px;
-            height: 150px;
+        .video-vertigo{
+            width: 300;
+            height: 150;
         }
     }
 }
@@ -58,4 +46,26 @@ main {
 
 .item4 {
     grid-area: item4;
+}
+
+.base1{
+    background-color: #CC9544;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-vertigo{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:
+    "item1"
+    "item2"
+    "item3"
+    "item4"
+    ;
+    justify-items: center;
+    margin: 10px;
 }

@@ -1,7 +1,6 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
 @import "./base/reset";
-@import "./layouts/body";
 @import "./layouts/header";
 @import "./layouts/main-index";
 @import "./layouts/main-contacto";
@@ -9,6 +8,6 @@
 @import "./layouts/main-guardanieves";
 @import "./layouts/main-vertigo";
 @import "./layouts/footer";
-@import "./layouts/media1024";
-@import "./layouts/media768";
 @import "./layouts/media480";
+@import "./layouts/media768";
+@import "./layouts/media1024";

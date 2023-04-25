@@ -1,5 +1,4 @@
 main{
-    background-color: #603601;
     justify-content: center;
     align-items: center;
     display: grid;
@@ -42,4 +41,12 @@ main{
 
 .item-index2{
     grid-area: item-index2;
+}
+
+.base1{
+    background-color: #CC9544;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
 }

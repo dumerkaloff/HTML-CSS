@@ -1,6 +1,10 @@
-main {
+.base2{
     background-image: url(../assets/img/TAPA_DARSHA.jpg);
-}
-.carousel-size{
-    margin: 50px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
