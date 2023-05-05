@@ -7,3 +7,7 @@ El proyecto consiste en una pagina web, donde se desplega el perfil de un animad
 En su mayoria las paginas son responsive, utilizando las medidas del max-width = ( 1024px / 768px / 320px ).
 
 Herramientas de trabajo: HTML, CSS, BOOTSTRAP, SEO.
+
+PRESUPUESTO DEL PROYECTO:
+
+![PRESUPUESTO](./assets/img/presupuesto.JPG)
